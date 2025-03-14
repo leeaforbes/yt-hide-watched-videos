@@ -27,6 +27,8 @@ chrome.storage.sync.get('watchThreshold', function(data) {
       percentageWatched = parseInt(percentageWatched)
       if(percentageWatched >= threshold) {
         video.remove()
+        // in future just hide the videos then unhide without page refresh :)
+        // video.style.display = 'none'
       }
     }
   }
